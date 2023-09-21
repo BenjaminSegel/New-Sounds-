@@ -1,0 +1,4 @@
+# ignore all .webp files
+*.webp
+#ignore all png files
+*.png
