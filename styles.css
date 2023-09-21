@@ -65,6 +65,7 @@ a[href*="newpods.html"]:hover{
     margin:25px;
     padding:20px;
     display:grid;
+    border-radius: 20px;
 }
 
 .content h1{
@@ -126,6 +127,7 @@ a[href*="newpods.html"]:hover{
     display:flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 table, th, td{
@@ -133,6 +135,7 @@ table, th, td{
     margin:25px;
     border: black solid 1px;
     text-align: center;
+    min-height:500px;
 }
 
 .rank{
@@ -143,6 +146,8 @@ table, th, td{
 .rubrik{
     gap:50px;
 }
+
+
 
 .trend-music{
     background:blue;
