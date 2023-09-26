@@ -71,6 +71,7 @@ a[href*="newpods.html"]:hover {
     top:0;
     left:0; 
     padding:20px 30px; 
+    display:none;
 }
 
 .nav-logo{
@@ -133,62 +134,14 @@ a[href*="newpods.html"]:hover {
 
 /*Content*/
 
-.content {
-  background: rgb(30, 59, 30);
-  height: auto;
-  margin: 25px;
-  padding: 20px;
-  display: grid;
-  border-radius: 20px;
-}
-
-.content h1 {
-  justify-self: center;
-  align-self: center;
-  text-shadow: 5px 5px 5px black;
-  border-bottom: 2px black solid;
-}
-
-.content p {
-  margin: 20px 0;
-  color: white;
-}
-
-.cardcontent2 img {
-  width: 300px;
-  padding: 0 20px;
-}
-
-.cardcontent1 img {
-  width: 300px;
-  padding: 20px;
-}
-
-.card-content1 {
-  grid-column-start: 1;
-  grid-row-start: 2;
-}
-
-.card-content2 {
-  grid-column-start: 2;
-  grid-row-start: 2;
-}
 
 .flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   height: 100%;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
 
 /*Table*/
 
@@ -196,22 +149,25 @@ a[href*="newpods.html"]:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap:3rem;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 table,
 th,
 td {
-  width: 100%;
-  margin: 10px;
+  width: 80rem;
   border: black solid 3px;
   text-align: center;
-  min-height: 500px;
+  min-height: 600px;
   border-radius: 10px;
   background-color: lightblue;
+
 }
 
 th:first-child {
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 td:first-child:hover {
@@ -233,15 +189,17 @@ td:first-child:hover {
 
 .trend-music {
   background: black;
-  width: 45%;
+  width: 30rem;
   text-align: center;
   border-radius: 20px;
+  
 }
 .trend-pods {
   background: black;
-  width: 45%;
+  width: 30rem;
   text-align: center;
   border-radius: 20px;
+  margin: 1rem 0;
 }
 
 /*Footer*/
@@ -252,9 +210,14 @@ td:first-child:hover {
   background: black;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
+ table,
+ th,
+ td{
+    width:30rem;
+ }  
 
-    
+
    
 
   
