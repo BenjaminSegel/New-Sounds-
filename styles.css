@@ -25,6 +25,52 @@ h2 {
 }
 /*Navbar*/
 
+.mobile{
+  display:none;
+}
+
+.nav-menu.mobile{
+  position:relative;
+  display:inline block;
+  padding: 0 10px;
+}
+
+.menu{
+  background:green;
+  color:white;
+  width:5rem;
+  height:100%;
+  text-align:center;
+  cursor: pointer;
+  width:100px;
+               
+}
+
+.menu-content{
+  background:black;
+  max-width:100px;
+  display:none;
+  position:absolute;
+  box-shadow: 0px 8px 14px 0px(0,0,0,0.2);
+  z-index:1;
+}
+
+.menu-content a{
+  display:block;
+  color:white;
+}
+
+.nav-menu:hover .menu-content{
+  display:block;
+}
+
+.menu-content:hover{
+  background:black;
+
+}
+
+
+
 
 
 .navbar {
@@ -45,6 +91,7 @@ h2 {
 }
 a[href*="index.html"]:hover {
   background: yellow;
+  
 }
 a[href*="newmusic.html"]:hover {
   background: lightgreen;
@@ -65,13 +112,17 @@ a[href*="newpods.html"]:hover {
 
 .sidebar{
     width:125px; 
-    height:100%; 
+    height:fit-content; 
     background: white;
     position:fixed;
     top:0;
     left:0; 
     padding:20px 30px; 
-    display:none;
+    opacity: 0.1;
+}
+.sidebar:hover{
+  transition: 1s;
+  opacity: 0.8;
 }
 
 .nav-logo{
@@ -101,7 +152,7 @@ a[href*="newpods.html"]:hover {
 
 .active{
     background: whitesmoke; 
-    width:100%; 
+    width:5rem; 
     height: 30px; 
     position: absolute; 
     left: 0; 
@@ -110,7 +161,7 @@ a[href*="newpods.html"]:hover {
     border-radius:6px;
     box-shadow: 0 5px 10px rgba(red, green, blue, 0.4) ;
     display:none;
-    transition: top 0.5s; 
+    transition:0.5s; 
 }
 
 .nav-links li:hover a{
@@ -127,6 +178,7 @@ a[href*="newpods.html"]:hover {
 }
 .nav-links li:nth-child(2):hover ~ .active{
     top:62px;
+    
 }
 .nav-links li:nth-child(3):hover ~ .active{
     top:110px;
@@ -204,21 +256,86 @@ td:first-child:hover {
 
 /*Footer*/
 
-.footer-container {
+.footer{
   width: 100%;
-  height: 8rem;
+  height: 8.8rem;
   background: black;
+  margin:2rem 0 0;
+  justify-content: space-between;
+  
 }
 
-@media only screen and (max-width: 1000px){
+.footer-logo{
+  font-size:3rem;
+  margin:1rem;
+}
+
+
+.footer-form{
+  margin:2rem;
+}
+.footer-form h2{
+  text-shadow: 2px 1px 4px white;
+}
+.form-button{
+  background-color: lightgreen;
+  min-width: 9.8rem;
+  text-align:center;
+  border:none;
+}
+
+.footer-socials{
+  padding-right:2rem;
+  padding-top:1rem;
+}
+
+.footer-socials img{
+  width:3rem;
+  margin:0 0.3rem 0.3rem;
+}
+
+
+@media only screen and (max-width: 600px){
  table,
  th,
  td{
-    width:30rem;
+    width:30rem;   
  }  
 
 
-   
+.logo{
+  font-size: 1rem;
+  position:absolute;
+}
+nav{
+  display:none;
+}
 
+.mobile{display:block;
+}
+
+.navbar{
+  display: flex;
+  width:100%;
   
+  min-width:480px;
+}
+
+.sidebar{
+  width:100px;
+  padding:1rem;
+}
+
+.footer{
+  min-width:480px;
+  margin:2rem 0 0;
+}
+
+.footer-socials{
+  
+  display:none;
+
+}
+
+
 }

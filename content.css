@@ -45,7 +45,7 @@
   bottom:25px;
 }
 
-@media only screen and (max-width: 1000px),(min-width:600px){
+@media only screen and (max-width: 800px) and (min-width: 600px){
    
    .content{
        width:30rem;
@@ -57,7 +57,7 @@
        
    }
    .content h1{
-       border:0;
+      border:0;
    }
 
 }
@@ -65,9 +65,10 @@
 @media only screen and (max-width: 600px){
    
     .content{
-        width:20rem;
+        display: grid;
+        width:22rem;
         height:auto;
-        margin: 10px;
+        margin-left:5rem;
     }
     
     .content-container{

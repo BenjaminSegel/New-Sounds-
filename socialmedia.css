@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(35, 35, 157);
+    
+    
+}
+
+h1{
+    
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    text-decoration: underline 2px;
+    
+}
+
+
+a :hover{
+    background:lightgray;
+    height:6rem
+}
+
+li{
+    list-style-type: none;
+    background-color: white;
+    width: 18rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: black solid 2px;
+    position:relative;
+    top:130px;
+       
+}
+a{
+  
+    text-decoration:none;
+    color:black;
+}
+li img{
+    width:5rem;
+}
+
+li h2{
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.instagram{
+display: flex;
+
+}
+.twitter{
+    display:flex;
+}
+.facebook{
+    display:flex;
+}
+.youtube{
+    display:flex;
+}

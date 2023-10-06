@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="content.css">
     <meta charset="UTF-8" />
@@ -16,10 +17,20 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="newmusic.html">Latest music</a></li>
-            <li><a href="newpods.html">Latest podcasts</a></li>
+            <li><a href="newpods.html">Latest podcasts</a></li>  
           </ul>
         </nav>
       </div>
+      <!--nav-mobilescreen-->
+      <div class="nav-menu mobile">
+        <button class="menu">Meny</button>
+        <div class="menu-content">
+          <a href="index.html">Home</a>
+          <a href="newmusic.html">Latest music</a>
+          <a href="newpods.html">Latest podcasts</a>
+        </div>
+      </div>
+      
     </div>
 
     <!--Sidebar-->
@@ -67,7 +78,7 @@
       </div>
     </section>
     
-    
+    <!--Table-->
     <div class="rubrik flex">
     </div>
     <div class="table-container">
@@ -163,7 +174,57 @@
         </tr>
       </table>
     </div>
+
+    <!--Footer-->
     <div class="footer-container">
+      <footer>
+        <div class="footer flex">
+          <h1 class="footer-logo">NS</h1>
+          <div class="footer-information">
+            <ul>
+              <li>
+                <a href="#"><strong>Help</strong></a>
+              </li>
+              <li>
+                <a href="#"><strong>Report a problem</strong></a>
+              </li>
+              <li>
+                <a href="#"><strong>Support Website</strong></a>
+              </li>
+              <li class="socials mobile">
+                <a href="socials.html"><strong>Social Media</strong></a>
+              </li>
+             </ul>
+            
+          </div>
+          <div class="footer-form">
+            <form>
+              <h2>Newsletter</h2>
+             <input type="text" name="name"
+             placeholder="Name">
+             <br />
+             <input type="text" name="mail" placeholder="E-mail">
+             <br />
+             <input type="number" name="telehone" placeholder="Telephone number">
+            </form>
+            <a href="#"><button class="form-button">Send</button></a>
+          </div>
+
+          <div class="footer-socials">
+            <a href="https://www.facebook.com/"><img src="facebook.png" alt="facebook"></a> 
+            <a href="https://www.instagram.com/"><img src="instagram.webp" alt="instagram"></a>
+            <br />
+            <a href="https://twitter.com/?lang=sv"><img src="twitter.png" alt="twitter"></a>
+            <a href="https://www.youtube.com/"><img src="youtube.webp" alt="youtube"></a>
+          </div>
+
+        </div>
+        
+        
+
+      </footer>
+     
+
     </div>
   
 
