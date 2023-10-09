@@ -43,6 +43,8 @@ h2 {
   text-align:center;
   cursor: pointer;
   width:100px;
+  border:0;
+  font-size: 1.5rem;
                
 }
 
@@ -284,9 +286,14 @@ td:first-child:hover {
   border:none;
 }
 
+
 .footer-socials{
   padding-right:2rem;
   padding-top:1rem;
+}
+
+.footer-socials img:hover{
+  scale:1.1;
 }
 
 .footer-socials img{
@@ -304,8 +311,9 @@ td:first-child:hover {
 
 
 .logo{
-  font-size: 1rem;
+  font-size: 2rem;
   position:absolute;
+  right:50px;
 }
 nav{
   display:none;
